@@ -39,7 +39,18 @@ export const GifGrid = ({category}) => {
                             {...img}
                         />
                     ))
+
                 }
+
+                {/*
+                Arriba se está utilizando el operador spread ... para enviar 
+                las propiedades de manera independiente, cpor cada uno de los elementos
+                en lugar de un objeto completo img
+                como más abajo:
+                     <GifGridItem 
+                    key={img.id}
+                    img={img}
+                /> */}
             </ol>
 
         </>
